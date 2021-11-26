@@ -5,51 +5,103 @@
         <meta charset="utf-8">
         <title>Site Touristique Taiwan</title>
         <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
     </head>
     <body>
-        <header class="main">
-            <img src="" alt="">
-            <div class="list">
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">À Propos</a></li>
-                    <li><a href="#">Contactez</a></li>
-                    <li><a href="#">Commentaires</a></li>
-                </ul>
+        <div class="fixed-header-slide">
+            <div class="fixed-header-wrap">
+                <header>
+                    <img src="img/logo.png" class="logo">
+                    <input type="checkbox" id="chk">
+                    <label for="chk" class="show-menu-btn"><i class="fas fa-ellipsis-h"></i></label>
+                    <ul class="menu">
+                        <a href="#">Accueil</a>
+                        <a href="#">À Propos</a>
+                        <a href="#">Contactez</a>
+                        <a href="#">Commentaires</a>
+                        <a href="#">Login</a>
+                        <label for="chk" class="hide-menu-btn"><i class="fas fa-times"></i></label>
+                    </ul>
+                </header>
             </div>
-            <h1 class="slogan">SLOGAN</h1>
-            <div class="slidershow middle">
-                <div class="slides">
-                    <input type="radio" name="r" id="r1" checked>
-                    <input type="radio" name="r" id="r2">
-                    <input type="radio" name="r" id="r3">
-                    <input type="radio" name="r" id="r4">
-                    <input type="radio" name="r" id="r5">
-                    <div class="slide s1">
-                        <img src="./img/bg1.jpg" alt="">
+		</div>
+        <div class="first">
+			<div class="text-box">
+				<p>VISITER</p>
+				<h1>T</h1><h1>a</h1><h1>i</h1><h1>w</h1><h1>a</h1><h1>n</h1>
+				<h3>UNE EXPERIENCE A VIVRE</h3>
+				<div class="row">
+					<a href="" class="order-btn">Découvrir Taiwan</a>
+					<a href="" class="order-btn">En Savoir Plus <span>&#x27F6;</span></a>
+					<span>Faites l'expérience d'une<br>culture riche et dépaysante</span>
+				</div>
+			</div>
+		</div>
+        <div class="second">
+            <h1 id="s-title">Nos Services</h1>
+            <div class="item-table1">
+                <div class="reco-card">
+                    <h1 class="item-title">Recommandé</h1>
+                    <h3 class="item-detail">À voir</h3>
+                </div>
+                <div class="item-combine">
+                    <div class="search-card">
+                        <h1 class="item-title">Trouver</h1>
+                        <h3 class="item-detail">Trouver</h3>
                     </div>
-                    <div class="slide">
-                        <img src="./img/bg2.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="./img/bg3.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="./img/bg4.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="./img/bg5.jpg" alt="">
+                    <div class="best-card">
+                        <h1 class="item-title">Meilleurs</h1>
+                        <h3 class="item-detail">Trouver</h3>
                     </div>
                 </div>
-                <div class="navigation">
-                    <label for="r1" class="bar"></label>
-                    <label for="r2" class="bar"></label>
-                    <label for="r3" class="bar"></label>
-                    <label for="r4" class="bar"></label>
-                    <label for="r5" class="bar"></label>
+		    </div>
+            <div class="item-table2">
+                <div class="region-card">
+                    <h1 class="item-title">Région</h1>
+                    <h3 class="item-detail">À voir</h3>
+                </div>
+                <div class="food-card">
+                    <h1 class="item-title">Food</h1>
+                    <h3 class="item-detail">À voir</h3>
+                </div>
+                <div class="cult-card">
+                    <h1 class="item-title">Culture</h1>
+                    <h3 class="item-detail">À voir</h3>
                 </div>
             </div>
-        </header>
+            <div class="item-table3">
+                <div class="view-card">
+                    <h1 class="item-title">Paysage</h1>
+                    <h3 class="item-detail">À voir</h3>
+                </div>
+                <div class="trans-card">
+                    <h1 class="item-title">Transport</h1>
+                    <h3 class="item-detail">À voir</h3>
+                </div>
+            </div>
+        </div>
+        <div class="last">
+            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="btn" href="#"><i class="fab fa-google"></i></a>
+            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
+            <div class="info">
+                <p>Champ de Mars, 0 Av. Anatole France, 75007 Paris</p>
+                <p>Phone: +33 (0)8 92 70 12 69 (général)</p>
+                <p>Phone: +33 (0)8 92 70 99 16 (commercial)</p>
+                <p>E-mail: serviceclients@bonvoyage.paris</p>
+                <p>Copyright ©2021 BonVoyage.fr</p>
+            </div>
+        </div>
+        <div class="fixed-footer-wrap">
+            <footer>
+                <div class="footer_mobile">
+                    <ul class="end">
+                        <a href="">www.bonvoyage.fr</a>
+                    </ul>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
