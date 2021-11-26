@@ -98,11 +98,20 @@ header {
 	transition: 0.4s linear;
 }
 .text-box h1:hover {
-    animation: chg 1.5s;
+    animation: chg 1.0s;
 }
 @keyframes chg {
     0% {
         color: #fff;
+        filter: blur(2px);
+		text-shadow: 0 0 10px #009688,
+					0 0 20px #009688,
+					0 0 40px #009688,
+					0 0 80px #009688,
+					0 0 120px #009688,
+					0 0 200px #009688,
+					0 0 300px #009688,
+					0 0 400px #009688;
     }
 }
 .text-box h3 {
@@ -192,6 +201,7 @@ header {
     font-size: 50px;
     padding: 150px;
     text-align: center;
+    transition: 0.4s linear;
 }
 .item-combine {
     height: 400px;
@@ -221,6 +231,8 @@ header {
 .search-card h1 {
     font-size: 40px;
     padding: 40px;
+    text-align: center;
+    transition: 0.4s linear;
 }
 .best-card {
     height: 50%;
@@ -240,6 +252,8 @@ header {
 .best-card h1 {
     font-size: 40px;
     padding: 40px;
+    text-align: center;
+    transition: 0.4s linear;
 }
 .item-table2 {
     display: flex;
@@ -266,6 +280,8 @@ header {
 .region-card h1 {
     font-size: 50px;
     padding: 145px;
+    text-align: center;
+    transition: 0.4s linear;
 }
 .food-card {
     height: 400px;
@@ -285,6 +301,8 @@ header {
 .food-card h1 {
     font-size: 50px;
     padding: 145px;
+    text-align: center;
+    transition: 0.4s linear;
 }
 .cult-card {
     height: 400px;
@@ -306,6 +324,8 @@ header {
 .cult-card h1 {
     font-size: 50px;
     padding: 145px;
+    text-align: center;
+    transition: 0.4s linear;
 }
 .item-table3 {
     display: flex;
@@ -334,6 +354,8 @@ header {
 .view-card h1 {
     font-size: 50px;
     padding: 150px;
+    text-align: center;
+    transition: 0.4s linear;
 }
 .trans-card {
     height: 400px;
@@ -354,6 +376,8 @@ header {
 .trans-card h1 {
     font-size: 50px;
     padding: 150px;
+    text-align: center;
+    transition: 0.4s linear;
 }
 .reco-card:hover, .search-card:hover,
 .best-card:hover, .region-card:hover,
@@ -370,11 +394,43 @@ header {
         background-color: #009688;
     }
 }
+.reco-card:hover h1, .reco-card:hover h3,
+.region-card:hover h1, .region-card:hover h3,
+.food-card:hover h1, .food-card:hover h3,
+.cult-card:hover h1, .cult-card:hover h3,
+.view-card:hover h1, .view-card:hover h3,
+.trans-card:hover h1, .trans-card:hover h3 {
+    animation: animate1 1.5s;
+    animation-fill-mode: forwards; /*用來固定動畫後結果*/
+    -webkit-animation-fill-mode: forwards; /*用來固定動畫後結果*/
+    color: #fff;
+}
+@keyframes animate1 {
+	100% {
+		padding-top: 5px;
+        padding-bottom: 5px;
+	}
+}
+.search-card:hover h1, .search-card:hover h3,
+.best-card:hover h1, .best-card:hover h3 {
+    animation: animate2 1.5s;
+    animation-fill-mode: forwards; /*用來固定動畫後結果*/
+    -webkit-animation-fill-mode: forwards; /*用來固定動畫後結果*/
+    color: #fff;
+}
+@keyframes animate2 {
+	100% {
+		padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 30px;
+        margin-bottom: 3px;
+	}
+}
 .item-title {
 	display: inline-block;
     margin-bottom: 40px;
 	margin-top: 40px;
-	color: #009688;
+	color: #fff;
 	font-size: 30px;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -398,6 +454,22 @@ header {
 .food-card:hover .item-detail, .cult-card:hover .item-detail,
 .view-card:hover .item-detail, .trans-card:hover .item-detail {
     color: #fff;
+}
+.know-btn {
+	display: inline-block;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	border: 2px solid #0fbcf9;
+	color: #0fbcf9;
+	padding: 18px 40px;
+	border-radius: 8px;
+	text-transform: uppercase;
+	font-weight: 500;
+	transition: 0.3s linear;
+}
+.know-btn:hover {
+	background-color: #0fbcf9;
+	color: #fff;
 }
 .last {
     position: relative;
