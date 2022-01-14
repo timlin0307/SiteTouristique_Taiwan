@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Site Touristique Taiwan</title>
+        <link rel="stylesheet" href="style_connaitre.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    </head>
+    <body>
+        <div class="fixed-header-slide">
+            <div class="fixed-header-wrap">
+                <header>
+                    <img src="img/logo.png" class="logo" id="logo">
+                    <input type="checkbox" id="chk">
+                    <label for="chk" class="show-menu-btn"><i class="fas fa-ellipsis-h"></i></label>
+                    <ul class="menu">
+                        <a href="#" id="head1">Accueil</a>
+                        <a href="#" id="head2">Nous Contacter</a>
+                        <a href="#" id="head3">Login</a>
+                        <label for="chk" class="hide-menu-btn"><i class="fas fa-times"></i></label>
+                    </ul>
+                </header>
+            </div>
+		</div>
+        <button class="myBtn" id="myBtn">^</button>
+        <div class="first" id="first">
+            <h1 id="s-title">Art Culture</h1>
+            <h3 id="s-detail">布袋戲是臺灣重要的傳統表演藝術之一，是集雕刻、美術、文學、掌技、音樂、口技於一身的綜合性藝術表演。將各種人物的戲偶以木頭、布料及各種配件製作，
+                托於掌上搬演，再配以說、唱表演戲劇的演出方式，所以又稱為掌中戲。</h3>
+            <h3 id="s-detail">油紙傘在客家人生活中扮演著重要角色，除遮陽避雨外，更是心中吉祥的象徵，在美濃人眼中，送傘象徵著吉祥、高貴的情誼。</h3>
+            <h3 id="s-detail">捏麵人是一項非常具有中國民族色彩的傳統技藝，又稱為「米雕人」，其材料為糯米粉團、麵粉團，蒸熟後運用，造型多以傳說故事或人物及動物花鳥為主，
+                現今又加上卡通、漫畫人物，由於色彩鮮艷並且可以食用，所以深受到兒童們的喜愛。</h3>
+            <h3 id="s-detail">吹糖以麥芽糖為主要材料，在鍋裡溶化，呈半膠狀時取起捏成中空的球狀，並抽出一條細長的管子，管子就冷卻成為固體，捏在手中的糖糰仍是高溫軟軟地，做吹糖的師匠，
+                雙手十指並用，一會兒挽，一會兒捏，那條抽出的管子，輕含在嘴唇裡吹著，短短三四十秒間一隻栩栩如生可愛的小動物便出現了。</h3>
+            <h3 id="s-detail">民國69年（西元1980年），臺灣一群熱愛結繩藝術的朋友，將中國歷代流傳下來，既富裝飾功能，又具實用價值的傳統節子，多方面加以收集整理，
+                進而研究創新，認為其外觀對稱、含蓄、精巧、變化之美，可以代表中國悠久的歷史，符合中國傳統裝飾的習俗和審美觀念，將其命名為「中國結」。</h3>
+            <h3 id="s-detail">其他還有:香包、陀螺、風箏、扯鈴、書法...等傳統文藝。</h3>
+        </div>
+        <div class="last" id="last">
+            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="btn" href="#"><i class="fab fa-google"></i></a>
+            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
+            <div class="info">
+                <p>Champ de Mars, 0 Av. Anatole France, 75007 Paris</p>
+                <p>Phone: +33 (0)8 92 70 12 69 (général)</p>
+                <p>Phone: +33 (0)8 92 70 99 16 (commercial)</p>
+                <p>E-mail: serviceclients@bonvoyage.paris</p>
+                <p>Copyright ©2021 BonVoyage.fr</p>
+            </div>
+        </div>
+        <div class="fixed-footer-wrap">
+            <footer>
+                <div class="footer_mobile">
+                    <ul class="end">
+                        <a href="">www.bonvoyage.fr</a>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <script type="text/javascript">
+            var myBtn = document.querySelector("#myBtn");
+            var logo = document.querySelector("#logo");
+            var hd1 = document.querySelector("#head1");
+            var hd2 = document.querySelector("#head2");
+            var hd3 = document.querySelector("#head3");
+            var first = document.querySelector("#first");
+            var last = document.querySelector("#last");
+
+            function scrollFunction() { // 返回頂部按鈕呈現與否
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    myBtn.style.display = "block";
+                } else {
+                    myBtn.style.display = "none";
+                }
+            }
+
+            function to(toE1) {
+                // toE1 為指定跳轉到ㄉ該位置的 DOM 節點
+                let bridge = toE1;
+                let body = document.body;
+                let height = 0;
+                // 計算該 DOM 節點到 body 頂部的距離
+                do {
+                    height += bridge.offsetTop;
+                    bridge = bridge.offsetParent;
+                } while (bridge !== body)
+                // 滾動到指定位置
+                window.scrollTo ({
+                    top: height,
+                    behavior: "smooth"
+                })
+            }
+
+            // 當網頁跳躍 20px 出現“返回頂部”按鈕
+            window.onscroll = function() {
+                scrollFunction()
+            }
+            myBtn.addEventListener("click", (event) => {
+                to(first);
+                event.preventDefault(); // 不加這行會出錯
+            })
+            logo.addEventListener("click", (event) => {
+                window.location.href = "index.html";
+                event.preventDefault(); // 不加這行會出錯
+            })
+            hd1.addEventListener("click", (event) => {
+                window.location.href = "index.html";
+                event.preventDefault(); // 不加這行會出錯
+            })
+            hd2.addEventListener("click", (event) => {
+                to(last);
+                event.preventDefault(); // 不加這行會出錯
+            })
+        </script>
+    </body>
+</html>

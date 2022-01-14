@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Site Touristique Taiwan</title>
+        <link rel="stylesheet" href="style_connaitre.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    </head>
+    <body>
+        <div class="fixed-header-slide">
+            <div class="fixed-header-wrap">
+                <header>
+                    <img src="img/logo.png" class="logo" id="logo">
+                    <input type="checkbox" id="chk">
+                    <label for="chk" class="show-menu-btn"><i class="fas fa-ellipsis-h"></i></label>
+                    <ul class="menu">
+                        <a href="#" id="head1">Accueil</a>
+                        <a href="#" id="head2">Nous Contacter</a>
+                        <a href="#" id="head3">Login</a>
+                        <label for="chk" class="hide-menu-btn"><i class="fas fa-times"></i></label>
+                    </ul>
+                </header>
+            </div>
+		</div>
+        <button class="myBtn" id="myBtn">^</button>
+        <div class="first" id="first">
+            <h1 id="s-title">Bienvenu à Formose</h1>
+            <h3 id="s-detail">2020年1月起，各國陸續爆發新冠肺炎疫情，重創全球觀光產業，而台灣防疫成功，相較世界各國，
+                成為相對安全的旅遊目的地，獲美國旅遊雜誌「環旅世界（Global Traveler）」評為「亞洲最佳休閒旅遊目的地」，
+                為掌握此產業轉型的契機，我們將持續為國旅市場加溫，同時為衝刺國際市場打好基礎，期望打造台灣成為疫後觀光大國。</h3>
+            <h3 id="s-detail">為順應數位化、在地化及永續化等趨勢，交通部觀光局持續落實「Taiwan Tourism 2030-台灣觀光政策白皮書」，
+                揭示觀光立國及觀光主流化理念，透過「組織法制變革、打造魅力景點、整備主題旅遊、廣拓觀光客源、優化產業環境及推展數位體驗」等六大主軸，
+                厚植國旅基礎及開拓國際市場，展現台灣友好友善自然及多元文化的特色，打造台灣成為亞洲優質友善的旅遊目的地。</h3>
+            <h3 id="s-detail">臺灣是個寶島，四季都有不同的文化風情展現，為落實永續觀光發展理念，我們從2018年「海灣旅遊年」、2019年「小鎮漫遊年」、2020年「脊梁山脈旅遊年」，
+                迎向2021年「自行車旅遊年」、2022年「鐵道觀光旅遊年」、2023年「跳島旅遊年」及2024年「博物館觀光旅遊年」。
+                我們持續配合主題旅遊年，推廣百大小鎮，均衡區域發展，擴大跨部會合作，整備觀光資源，讓國內外旅客能更深入認識台灣並愛護台灣。
+                2021年自行車旅遊年，更推出16條多元自行車路線，除了騎乘環境之外，搭配遊程與活動，提供民眾完整的自行車旅遊體驗，進而帶動台灣觀光發展。</h3>
+            <h3 id="s-detail">歡迎全世界喜歡台灣的朋友，不論是鐵馬及鐵道雙鐵旅行、跳島遊、博物館文化之旅等，保證您會發現完全不一樣的台灣，獲得全新的旅遊體驗！</h3>
+        </div>
+        <div class="last" id="last">
+            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="btn" href="#"><i class="fab fa-google"></i></a>
+            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
+            <div class="info">
+                <p>Champ de Mars, 0 Av. Anatole France, 75007 Paris</p>
+                <p>Phone: +33 (0)8 92 70 12 69 (général)</p>
+                <p>Phone: +33 (0)8 92 70 99 16 (commercial)</p>
+                <p>E-mail: serviceclients@bonvoyage.paris</p>
+                <p>Copyright ©2021 BonVoyage.fr</p>
+            </div>
+        </div>
+        <div class="fixed-footer-wrap">
+            <footer>
+                <div class="footer_mobile">
+                    <ul class="end">
+                        <a href="">www.bonvoyage.fr</a>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <script type="text/javascript">
+            var myBtn = document.querySelector("#myBtn");
+            var logo = document.querySelector("#logo");
+            var hd1 = document.querySelector("#head1");
+            var hd2 = document.querySelector("#head2");
+            var hd3 = document.querySelector("#head3");
+            var first = document.querySelector("#first");
+            var last = document.querySelector("#last");
+
+            function scrollFunction() { // 返回頂部按鈕呈現與否
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    myBtn.style.display = "block";
+                } else {
+                    myBtn.style.display = "none";
+                }
+            }
+
+            function to(toE1) {
+                // toE1 為指定跳轉到ㄉ該位置的 DOM 節點
+                let bridge = toE1;
+                let body = document.body;
+                let height = 0;
+                // 計算該 DOM 節點到 body 頂部的距離
+                do {
+                    height += bridge.offsetTop;
+                    bridge = bridge.offsetParent;
+                } while (bridge !== body)
+                // 滾動到指定位置
+                window.scrollTo ({
+                    top: height,
+                    behavior: "smooth"
+                })
+            }
+
+            // 當網頁跳躍 20px 出現“返回頂部”按鈕
+            window.onscroll = function() {
+                scrollFunction()
+            }
+            myBtn.addEventListener("click", (event) => {
+                to(first);
+                event.preventDefault(); // 不加這行會出錯
+            })
+            logo.addEventListener("click", (event) => {
+                window.location.href = "index.html";
+                event.preventDefault(); // 不加這行會出錯
+            })
+            hd1.addEventListener("click", (event) => {
+                window.location.href = "index.html";
+                event.preventDefault(); // 不加這行會出錯
+            })
+            hd2.addEventListener("click", (event) => {
+                to(last);
+                event.preventDefault(); // 不加這行會出錯
+            })
+        </script>
+    </body>
+</html>

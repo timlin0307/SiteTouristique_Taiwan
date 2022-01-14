@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <title>Site Touristique Taiwan</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_i.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
     </head>
     <body>
@@ -32,7 +32,7 @@
 				<div class="row">
 					<a href="" class="order-btn" id="btn1">Découvrir Taïwan</a>
 					<a href="" class="order-btn" id="btn2">En Savoir Plus <span>&#x27F6;</span></a>
-					<span>Faites l'expérience d'une<br>culture riche et dépaysante</span>
+					<span id="spn">Faites l'expérience d'une culture riche et dépaysante</span>
 				</div>
 			</div>
 		</div>
@@ -88,7 +88,7 @@
                         on vous propose de découvrir ces différences pour chaque région.</h3>
                     <a href="#" class="know-btn">En Savoir Plus</a>
                 </div>
-                <div class="food-card">
+                <div class="food-card" id="card5">
                     <h1 class="item-title">Cuisine</h1>
                     <h3 class="item-detail3">Goûter un authentique BubbleTea, ou tester des spécialités locales 
                         succulentes, vous avez la garantie de vous régaler!</h3>
@@ -152,29 +152,35 @@
             var img3 = document.querySelector("#img3");
             var img4 = document.querySelector("#img4");
             var img5 = document.querySelector("#img5");
+            var card5 = document.querySelector("#card5");
             var first = document.querySelector("#first");
             var second = document.querySelector("#second");
             var third = document.querySelector("#third");
             var last = document.querySelector("#last");
 
             img1.addEventListener("click", (event) => {
-                window.location.href = "Formose.html";
+                window.location.href = "01_Formose.html";
                 event.preventDefault();
             })
             img2.addEventListener("click", (event) => {
-                window.location.href = "Apercu.html";
+                window.location.href = "01_Apercu.html";
                 event.preventDefault();
             })
             img3.addEventListener("click", (event) => {
-                window.location.href = "Religion.html";
+                window.location.href = "01_Religion.html";
                 event.preventDefault();
             })
             img4.addEventListener("click", (event) => {
-                window.location.href = "ArtCulturel.html";
+                window.location.href = "01_ArtCulturel.html";
                 event.preventDefault();
             })
             img5.addEventListener("click", (event) => {
-                window.location.href = "Tradition.html";
+                window.location.href = "01_Tradition.html";
+                event.preventDefault();
+            })
+
+            card5.addEventListener("click", (event) => {
+                window.location.href = "02_Cuisine.html";
                 event.preventDefault();
             })
 

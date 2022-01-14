@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Site Touristique Taiwan</title>
+        <link rel="stylesheet" href="style_connaitre.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    </head>
+    <body>
+        <div class="fixed-header-slide">
+            <div class="fixed-header-wrap">
+                <header>
+                    <img src="img/logo.png" class="logo" id="logo">
+                    <input type="checkbox" id="chk">
+                    <label for="chk" class="show-menu-btn"><i class="fas fa-ellipsis-h"></i></label>
+                    <ul class="menu">
+                        <a href="#" id="head1">Accueil</a>
+                        <a href="#" id="head2">Nous Contacter</a>
+                        <a href="#" id="head3">Login</a>
+                        <label for="chk" class="hide-menu-btn"><i class="fas fa-times"></i></label>
+                    </ul>
+                </header>
+            </div>
+		</div>
+        <button class="myBtn" id="myBtn">^</button>
+        <div class="first" id="first">
+            <h1 id="s-title">Tradition</h1>
+            <h3 id="s-detail">臺灣的歷史至少可上溯至7,000年前。大約4,000多年前，南島語系原住民的祖先先後、陸續漂流到臺灣，成為目前所知臺灣最早的居民。
+                從13世紀起，澎湖地區便開始有漢人活動的足跡。16世紀的大航海時代，西洋人到遠東地區進行殖民、貿易活動，臺灣由於位於東亞陸域與海域交點，遂成為當時東、西方各勢力的交集點。</h3>
+            <h3 id="s-detail">在面對21世紀開展的同時，政治民主化、經濟自由化與全球化的潮流更見風起雲湧，臺灣正面臨一個全新的政經局勢與國際競爭模式。
+                現在的臺灣，擁有優質的公共建設、便利的運輸系統及完善的通訊服務，在面對數次國際能源危機及經濟不景氣，我們創造了舉世讚譽的「經濟奇蹟」，成為開發中國家的成功典範。</h3>
+            <h3 id="s-detail">臺灣發展的過程中包括了原住民、早期中國閩南、 客家移民、荷蘭人、西班牙人、日本人和近期的中國大陸移民，而此地人民注重傳統文化的保存，也逐漸發展出新的文化。</h3>
+            <h3 id="s-detail">民國38年（西元1949年）隨政府播遷來臺的新移民，籍屬各省區，語種複雜，但大體都能以「官話 (mandarin)」溝通，在臺灣稱「國語」，在海外稱「華語」。
+                隨著教育的普及，「官話」已成為臺灣各族群的共通語。而臺灣族群由於以閩南人居多，因此會說閩南話（福佬話）的居民也不少。人數較少的客家人與各族原住民，也都保有其族群所特有的語言。
+                由於臺灣受到日本殖民統治達半世紀之久，許多老一輩在光復前接受日本教育的居民還會說一點日語。</h3>
+        </div>
+        <div class="last" id="last">
+            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="btn" href="#"><i class="fab fa-google"></i></a>
+            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
+            <div class="info">
+                <p>Champ de Mars, 0 Av. Anatole France, 75007 Paris</p>
+                <p>Phone: +33 (0)8 92 70 12 69 (général)</p>
+                <p>Phone: +33 (0)8 92 70 99 16 (commercial)</p>
+                <p>E-mail: serviceclients@bonvoyage.paris</p>
+                <p>Copyright ©2021 BonVoyage.fr</p>
+            </div>
+        </div>
+        <div class="fixed-footer-wrap">
+            <footer>
+                <div class="footer_mobile">
+                    <ul class="end">
+                        <a href="">www.bonvoyage.fr</a>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <script type="text/javascript">
+            var myBtn = document.querySelector("#myBtn");
+            var logo = document.querySelector("#logo");
+            var hd1 = document.querySelector("#head1");
+            var hd2 = document.querySelector("#head2");
+            var hd3 = document.querySelector("#head3");
+            var first = document.querySelector("#first");
+            var last = document.querySelector("#last");
+
+            function scrollFunction() { // 返回頂部按鈕呈現與否
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    myBtn.style.display = "block";
+                } else {
+                    myBtn.style.display = "none";
+                }
+            }
+
+            function to(toE1) {
+                // toE1 為指定跳轉到ㄉ該位置的 DOM 節點
+                let bridge = toE1;
+                let body = document.body;
+                let height = 0;
+                // 計算該 DOM 節點到 body 頂部的距離
+                do {
+                    height += bridge.offsetTop;
+                    bridge = bridge.offsetParent;
+                } while (bridge !== body)
+                // 滾動到指定位置
+                window.scrollTo ({
+                    top: height,
+                    behavior: "smooth"
+                })
+            }
+
+            // 當網頁跳躍 20px 出現“返回頂部”按鈕
+            window.onscroll = function() {
+                scrollFunction()
+            }
+            myBtn.addEventListener("click", (event) => {
+                to(first);
+                event.preventDefault(); // 不加這行會出錯
+            })
+            logo.addEventListener("click", (event) => {
+                window.location.href = "index.html";
+                event.preventDefault(); // 不加這行會出錯
+            })
+            hd1.addEventListener("click", (event) => {
+                window.location.href = "index.html";
+                event.preventDefault(); // 不加這行會出錯
+            })
+            hd2.addEventListener("click", (event) => {
+                to(last);
+                event.preventDefault(); // 不加這行會出錯
+            })
+        </script>
+    </body>
+</html>

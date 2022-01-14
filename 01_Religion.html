@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Site Touristique Taiwan</title>
+        <link rel="stylesheet" href="style_connaitre.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    </head>
+    <body>
+        <div class="fixed-header-slide">
+            <div class="fixed-header-wrap">
+                <header>
+                    <img src="img/logo.png" class="logo" id="logo">
+                    <input type="checkbox" id="chk">
+                    <label for="chk" class="show-menu-btn"><i class="fas fa-ellipsis-h"></i></label>
+                    <ul class="menu">
+                        <a href="#" id="head1">Accueil</a>
+                        <a href="#" id="head2">Nous Contacter</a>
+                        <a href="#" id="head3">Login</a>
+                        <label for="chk" class="hide-menu-btn"><i class="fas fa-times"></i></label>
+                    </ul>
+                </header>
+            </div>
+		</div>
+        <button class="myBtn" id="myBtn">^</button>
+        <div class="first" id="first">
+            <h1 id="s-title">Religion</h1>
+            <h3 id="s-detail">清領時期統治臺灣時，漳、泉居民才大量渡海來臺。當時臺灣海峽風浪很大，所以移民們都攜帶神像、香火、香灰作為護身符，
+                其中以媽祖神像最多，因為媽祖是海神，所以神像常被安置在船上，以祈求她保護航海安全。而在開墾初期，由於野地醫藥不發達，只要有疾病流行，就會造成許多人死亡，
+                所以人們都信仰瘟疫之神「王爺」。王爺又稱「千歲爺」、「府千歲」，有很多不同的姓氏，傳說王爺可以去除疾病，所以人們相信他可以庇佑身體健康。
+                到了後期，村落漸漸繁榮信徒就興建各種寺廟，來感謝神的保佑所以媽祖和王爺也就成了臺灣寺廟供奉神明的二大系統。在當時，寺廟不僅是居民的信仰中心，而且兼具教化、救濟等功能。</h3>
+            <h3 id="s-detail">寺廟是精緻的紀念建築，是神明的殿堂，也是信徒的信仰中心。除了空間規劃和形式格局有一套複雜的規矩外，
+                還包含木雕、石雕、泥塑、陶藝、剪粘、彩繪、書法……等裝飾，這些裝飾不僅具有視覺上的美感，更反映出民眾趨吉避凶、祈望教化和自我表彰的人生觀，
+                充分展現出民間的豐富內涵和精神文明的宗教藝術。</h3>
+            <h3 id="s-detail">在臺灣的廟裡，經常會看到一些求神問卜的儀式。例如：信徒有所祈願或想卜知好壞，就會在神佛面前點上一柱香，默念自己的姓名、生辰、住址和疑惑的事，
+                用「擲筊」方式請求神佛指點。「筊」是一對以竹根或木做成的彎月形卜具，凸面為陰，平面為陽，把它們輕拋到地上，一陰一陽叫做「聖筊」，代表好現象；
+                二陽叫做 「笑筊」，表示不好不壞；二陰為「怒筊」，表示不好。此外，還有一種是「抽籤」，「籤」是由竹片做成的長條形卜具，籤上有一個號數。經過搖動後，
+                可以抽取排在籤筒中最高位的籤，然後再擲筊請示神佛，若3次都是聖筊，就可依籤號找出籤紙，得到指點，而且較大的寺廟中，也都有專人可解籤中含義。</h3>
+        </div>
+        <div class="last" id="last">
+            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="btn" href="#"><i class="fab fa-google"></i></a>
+            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
+            <div class="info">
+                <p>Champ de Mars, 0 Av. Anatole France, 75007 Paris</p>
+                <p>Phone: +33 (0)8 92 70 12 69 (général)</p>
+                <p>Phone: +33 (0)8 92 70 99 16 (commercial)</p>
+                <p>E-mail: serviceclients@bonvoyage.paris</p>
+                <p>Copyright ©2021 BonVoyage.fr</p>
+            </div>
+        </div>
+        <div class="fixed-footer-wrap">
+            <footer>
+                <div class="footer_mobile">
+                    <ul class="end">
+                        <a href="">www.bonvoyage.fr</a>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <script type="text/javascript">
+            var myBtn = document.querySelector("#myBtn");
+            var logo = document.querySelector("#logo");
+            var hd1 = document.querySelector("#head1");
+            var hd2 = document.querySelector("#head2");
+            var hd3 = document.querySelector("#head3");
+            var first = document.querySelector("#first");
+            var last = document.querySelector("#last");
+
+            function scrollFunction() { // 返回頂部按鈕呈現與否
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    myBtn.style.display = "block";
+                } else {
+                    myBtn.style.display = "none";
+                }
+            }
+
+            function to(toE1) {
+                // toE1 為指定跳轉到ㄉ該位置的 DOM 節點
+                let bridge = toE1;
+                let body = document.body;
+                let height = 0;
+                // 計算該 DOM 節點到 body 頂部的距離
+                do {
+                    height += bridge.offsetTop;
+                    bridge = bridge.offsetParent;
+                } while (bridge !== body)
+                // 滾動到指定位置
+                window.scrollTo ({
+                    top: height,
+                    behavior: "smooth"
+                })
+            }
+
+            // 當網頁跳躍 20px 出現“返回頂部”按鈕
+            window.onscroll = function() {
+                scrollFunction()
+            }
+            myBtn.addEventListener("click", (event) => {
+                to(first);
+                event.preventDefault(); // 不加這行會出錯
+            })
+            logo.addEventListener("click", (event) => {
+                window.location.href = "index.html";
+                event.preventDefault(); // 不加這行會出錯
+            })
+            hd1.addEventListener("click", (event) => {
+                window.location.href = "index.html";
+                event.preventDefault(); // 不加這行會出錯
+            })
+            hd2.addEventListener("click", (event) => {
+                to(last);
+                event.preventDefault(); // 不加這行會出錯
+            })
+        </script>
+    </body>
+</html>
