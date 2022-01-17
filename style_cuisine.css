@@ -115,192 +115,220 @@ header {
 	left: 50%;
 	transform: translateX(-50%);
 }
-.food-table1 {
-    height: 45em;
-    width: min(90.4em, 100%);
-    display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+.food-table {
+    height: 90.2em;
 	margin: auto;
-    margin-top: 0.4em;
-    justify-content: center;
-}
-.food-table2 {
-    height: 100%;
-    width: 50%;
-    display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
-.food-table3, .food-table4 {
-    height: 100%;
-    width: 25%;
-    display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-    margin-left: 0.2em;
-}
-.food-table5, .food-table6 {
-    height: 100%;
-    width: 25%;
-    display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-    margin-right: 0.2em;
+    margin-top: 0.2em;
+    position: relative;
 }
 #f1 {
-    height: 45em;
-    width: 45em;
-    background-image: url(img/01food.jpg);
+    height: 90.2em;
+    width: 90.2em;
+    background-image: url(https://i.imgur.com/FQt3e27.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-	margin: 0em 0.1em 0em 0em;
 	cursor: pointer;
 	overflow: hidden;
+	position: absolute;
+	right: 50%;
+	top: 0em;
+	transition: 0.5s linear;
 }
 #f2 {
-    height: 22.3em;
-    width: 22.3em;
-    background-image: url(img/02food.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-	cursor: pointer;
-	overflow: hidden;
-    margin: 0em 0em 0.2em 0.1em;
-}
-#f3 {
-    height: 22.3em;
-    width: 22.3em;
-    background-image: url(img/03food.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-	cursor: pointer;
-	overflow: hidden;
-    margin: 0.2em 0em 0em 0.1em;
-}
-#f4 {
-    height: 22.3em;
-    width: 22.3em;
-    background-image: url(img/04food.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-	cursor: pointer;
-	overflow: hidden;
-    margin: 0em 0em 0.2em 0.2em;
-}
-#f5 {
-    height: 22.3em;
-    width: 22.3em;
-    background-image: url(img/05food.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-	cursor: pointer;
-	overflow: hidden;
-    margin: 0.2em 0em 0em 0.2em;
-}
-#f6 {
-    height: 22.3em;
-    width: 22.3em;
-    background-image: url(img/06food.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-	cursor: pointer;
-	overflow: hidden;
-    margin: 0em 0.1em 0.2em 0em;
-}
-#f7 {
-    height: 22.3em;
-    width: 22.3em;
-    background-image: url(img/07food.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-	cursor: pointer;
-	overflow: hidden;
-    margin: 0.2em 0.1em 0em 0em;
-}
-#f8 {
-    height: 22.3em;
-    width: 22.3em;
-    background-image: url(img/08food.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-	cursor: pointer;
-	overflow: hidden;
-    margin: 0em 0.1em 0.2em 0.1em;
-}
-#f9 {
-    height: 22.3em;
-    width: 22.3em;
-    background-image: url(img/09food.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-	cursor: pointer;
-	overflow: hidden;
-    margin: 0.2em 0.1em 0em 0.1em;
-}
-#f10 {
     height: 45em;
     width: 45em;
-    background-image: url(img/10food.jpg);
+    background-image: url(https://i.imgur.com/UWW9AfL.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-	margin: 0em 0em 0em 0.1em;
 	cursor: pointer;
 	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	margin-left: 0.2em;
+	top: 0em;
+	transition: 0.5s linear;
+}
+#f3 {
+    height: 45em;
+    width: 45em;
+    background-image: url(https://i.imgur.com/FZmeajR.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	margin-left: 0.2em;
+	top: 45.2em;
+	transition: 0.5s linear;
+}
+#f4 {
+    height: 45em;
+    width: 45em;
+    background-image: url(https://i.imgur.com/9tT8CHc.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+    position: absolute;
+	left: 50%;
+	margin-left: 45.4em;
+	top: 0em;
+	transition: 0.5s linear;
+}
+#f5 {
+    height: 45em;
+    width: 45em;
+    background-image: url(https://i.imgur.com/Uc6ofr8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+    position: absolute;
+    left: 50%;
+	margin-left: 45.4em;
+	top: 45.2em;
+	transition: 0.5s linear;
+}
+#f6 {
+    height: 45em;
+    width: 45em;
+    background-image: url(https://i.imgur.com/tPLS2AK.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+    position: absolute;
+    right: 50%;
+    margin-right: 45.2em;
+	top: 0em;
+	transition: 0.5s linear;
+}
+#f7 {
+    height: 45em;
+    width: 45em;
+    background-image: url(https://i.imgur.com/nrUDvQ9.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+    position: absolute;
+	right: 50%;
+    margin-right: 45.2em;
+	top: 45.2em;
+	transition: 0.5s linear;
+}
+#f8 {
+    height: 45em;
+    width: 45em;
+    background-image: url(https://i.imgur.com/b8RvQmt.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	right: 50%;
+    margin-right: 0em;
+	top: 0em;
+	transition: 0.5s linear;
+}
+#f9 {
+    height: 45em;
+    width: 45em;
+    background-image: url(https://i.imgur.com/WMfYYDt.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	right: 50%;
+    margin-left: 0em;
+	top: 45.2em;
+	transition: 0.5s linear;
+}
+#f10 {
+    height: 90.2em;
+    width: 90.2em;
+    background-image: url(https://i.imgur.com/fIgGPxg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	margin-left: 0.2em;
+	top: 0em;
+	transition: 0.5s linear;
 }
 #f11 {
-    height: 22.3em;
-    width: 22.3em;
-    background-image: url(img/11food.jpg);
+    height: 45em;
+    width: 45em;
+    background-image: url(https://i.imgur.com/UWW9AfL.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-	margin: 0.2em;
 	cursor: pointer;
 	overflow: hidden;
+	position: absolute;
+	right: 50%;
+    margin-right: 45.2em;
+	top: 0em;
+	transition: 0.5s linear;
 }
 #f12 {
-    height: 22.3em;
-    width: 22.3em;
-    background-image: url(img/12food.jpg);
+    height: 45em;
+    width: 45em;
+    background-image: url(https://i.imgur.com/UWW9AfL.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-	margin: 0.2em;
 	cursor: pointer;
 	overflow: hidden;
+	position: absolute;
+	right: 50%;
+    margin-right: 0em;
+	top: 0em;
+	transition: 0.5s linear;
 }
 #f13 {
-    height: 22.3em;
-    width: 22.3em;
-    background-image: url(img/13food.jpg);
+    height: 45em;
+    width: 45em;
+    background-image: url(https://i.imgur.com/UWW9AfL.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-	margin: 0.2em;
 	cursor: pointer;
 	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	margin-left: 0.2em;
+	top: 0em;
+	transition: 0.5s linear;
 }
 #f14 {
-    height: 22.3em;
-    width: 22.3em;
-    background-image: url(img/14food.jpg);
+    height: 45em;
+    width: 45em;
+    background-image: url(https://i.imgur.com/UWW9AfL.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-	margin: 0.2em;
 	cursor: pointer;
 	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	margin-left: 45.4em;
+	top: 0em;
+	transition: 0.5s linear;
 }
 #f1:hover, #f2:hover, #f3:hover, #f4:hover, #f5:hover,
 #f6:hover, #f7:hover, #f8:hover, #f9:hover, #f10:hover,
@@ -308,19 +336,142 @@ header {
     opacity: 0.85;
     transition: 0.2s linear;
 }
-#checkbox1, #checkbox2, #checkbox3,
-#checkbox4, #checkbox5 { /*Hide the checkbox*/
+#checkbox1, #checkbox2, #checkbox3, #checkbox4, #checkbox5,
+#checkbox6, #checkbox7, #checkbox8, #checkbox9, #checkbox10 { /*Hide the checkbox*/
     display: none;
 }
-#ft1, #ft2, #ft3, #ft4, #ft5 { /*Hide expandable content by default*/
+#ft1 { /*Hide expandable content by default*/
+    height: 90.2em;
+    width: 0em;
+    background-color: #009688;
+	cursor: pointer;
+    position: absolute;
+	left: 50%;
+	margin-left: 0.2em;
+	top: 0em;
+	z-index: 1;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#ft2, #ft3 { /*Hide expandable content by default*/
+    height: 90.2em;
+    width: 0em;
+    background-color: #009688;
+	cursor: pointer;
+    position: absolute;
+    right: 50%;
+    margin-right: -45.2em;
+	top: 0em;
+	z-index: 1;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#ft4, #ft5 { /*Hide expandable content by default*/
+    height: 90.2em;
+    width: 0em;
+    background-color: #009688;
+	cursor: pointer;
+    position: absolute;
+	right: 50%;
+	margin-right: -90.4em;
+	top: 0em;
+	z-index: 1;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#ft6, #ft7 { /*Hide expandable content by default*/
+    height: 90.2em;
+    width: 0em;
+    background-color: #009688;
+	cursor: pointer;
+    position: absolute;
+    left: 50%;
+    margin-left: -45em;
+	top: 0em;
+	z-index: 1;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#ft8, #ft9 { /*Hide expandable content by default*/
+    height: 90.2em;
+    width: 0em;
+    background-color: #009688;
+	cursor: pointer;
+    position: absolute;
+    left: 50%;
+	margin-left: 0.2em;
+	top: 0em;
+	z-index: 1;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#ft10 { /*Hide expandable content by default*/
+    height: 90.2em;
+    width: 0em;
+    background-color: #009688;
+	cursor: pointer;
+    position: absolute;
+	right: 50%;
+	top: 0em;
+	z-index: 1;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#ft11 { /*Hide expandable content by default*/
     height: 45em;
     width: 0em;
     background-color: #009688;
 	cursor: pointer;
     position: absolute;
-    transition: 0.5s linear;
+    left: 50%;
+    margin-left: -45em;
+	top: 0em;
+	z-index: 1;
+	word-break: break-all;
+	word-wrap: break-word;
 }
-#ft1 h1, #ft2 h1, #ft3 h1, #ft4 h1, #ft5 h1 {
+#ft12 { /*Hide expandable content by default*/
+    height: 45em;
+    width: 0em;
+    background-color: #009688;
+	cursor: pointer;
+    position: absolute;
+    left: 50%;
+	margin-left: 0.2em;
+	top: 0em;
+	z-index: 1;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#ft13 { /*Hide expandable content by default*/
+    height: 45em;
+    width: 0em;
+    background-color: #009688;
+	cursor: pointer;
+    position: absolute;
+    right: 50%;
+    margin-right: -45.2em;
+	top: 0em;
+	z-index: 1;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#ft14 { /*Hide expandable content by default*/
+    height: 45em;
+    width: 0em;
+    background-color: #009688;
+	cursor: pointer;
+    position: absolute;
+	right: 50%;
+	margin-right: -90.4em;
+	top: 0em;
+	z-index: 1;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#ft1 h1, #ft2 h1, #ft3 h1, #ft4 h1, #ft5 h1,
+#ft6 h1, #ft7 h1, #ft8 h1, #ft9 h1, #ft10 h1,
+#ft11 h1, #ft12 h1, #ft13 h1, #ft14 h1 {
     margin-top: 0em;
     font-size: 0em;
     letter-spacing: 0em;
@@ -328,17 +479,24 @@ header {
     opacity: 0;
 }
 #checkbox1:checked ~ #ft1 {
-    width: 45em;
-    margin-left: 45.4em;
+    width: 90.2em;
     transition: 0.5s linear;
 }
 #checkbox1:not(:checked) ~ #ft1 {
     width: 0em;
-    margin-left: 0.4em;
     transition: 0.5s linear;
 }
 #checkbox2:checked ~ #ft2, #checkbox3:checked ~ #ft3 {
-    width: 45em;
+    width: 90.2em;
+    transition: 0.5s linear;
+}
+#checkbox2:checked ~ #f2, #checkbox2:checked ~ #f3,
+#checkbox3:checked ~ #f2, #checkbox3:checked ~ #f3 {
+    margin-left: -90.2em;
+    transition: 0.5s linear;
+}
+#checkbox2:checked ~ #f1, #checkbox3:checked ~ #f1 {
+    visibility: collapse;
     transition: 0.5s linear;
 }
 #checkbox2:not(:checked) ~ #ft2, #checkbox3:not(:checked) ~ #ft3 {
@@ -346,18 +504,127 @@ header {
     transition: 0.5s linear;
 }
 #checkbox4:checked ~ #ft4, #checkbox5:checked ~ #ft5 {
-    width: 45em;
-    margin-left: -45.4em;
+    width: 90.2em;
+    transition: 0.5s linear;
+}
+#checkbox4:checked ~ #f2, #checkbox4:checked ~ #f3,
+#checkbox5:checked ~ #f2, #checkbox5:checked ~ #f3 {
+    margin-left: -90.2em;
+    transition: 0.5s linear;
+}
+#checkbox4:checked ~ #f4, #checkbox4:checked ~ #f5,
+#checkbox5:checked ~ #f4, #checkbox5:checked ~ #f5 {
+    margin-left: -45em;
+    transition: 0.5s linear;
+}
+#checkbox4:checked ~ #f1, #checkbox5:checked ~ #f1 {
+    opacity: 0;
     transition: 0.5s linear;
 }
 #checkbox4:not(:checked) ~ #ft4, #checkbox5:not(:checked) ~ #ft5 {
     width: 0em;
-    margin-left: -0.4em;
+    transition: 0.5s linear;
+}
+#checkbox6:checked ~ #ft6, #checkbox7:checked ~ #ft7 {
+    width: 90.2em;
+    transition: 0.5s linear;
+}
+#checkbox6:checked ~ #f10, #checkbox7:checked ~ #f10 {
+    opacity: 0;
+    transition: 0.5s linear;
+}
+#checkbox6:checked ~ #f8, #checkbox6:checked ~ #f9,
+#checkbox7:checked ~ #f8, #checkbox7:checked ~ #f9 {
+    margin-right: -90.4em;
+    transition: 0.5s linear;
+}
+#checkbox6:not(:checked) ~ #ft6, #checkbox7:not(:checked) ~ #ft7 {
+    width: 0em;
+    transition: 0.5s linear;
+}
+#checkbox8:checked ~ #ft8, #checkbox9:checked ~ #ft9 {
+    width: 90.2em;
+    transition: 0.5s linear;
+}
+#checkbox8:not(:checked) ~ #ft8, #checkbox9:not(:checked) ~ #ft9 {
+    width: 0em;
+    transition: 0.5s linear;
+}
+#checkbox10:checked ~ #ft10 {
+    width: 90.2em;
+    transition: 0.5s linear;
+}
+#checkbox10:not(:checked) ~ #ft10 {
+    width: 0em;
+    transition: 0.5s linear;
+}
+#checkbox11:checked ~ #ft11 {
+    width: 90.2em;
+    transition: 0.5s linear;
+}
+#checkbox11:checked ~ #f13, #checkbox11:checked ~ #f14 {
+    opacity: 0;
+    transition: 0.5s linear;
+}
+#checkbox11:checked ~ #f12 {
+    margin-right: -90.4em;
+    transition: 0.5s linear;
+}
+#checkbox11:not(:checked) ~ #ft11 {
+    width: 0em;
+    transition: 0.5s linear;
+}
+#checkbox12:checked ~ #ft12 {
+    width: 90.2em;
+    transition: 0.5s linear;
+}
+#checkbox12:not(:checked) ~ #ft12 {
+    width: 0em;
+    transition: 0.5s linear;
+}
+#checkbox13:checked ~ #ft13 {
+    width: 90.2em;
+    transition: 0.5s linear;
+}
+#checkbox13:checked ~ #f13 {
+    margin-left: -90.2em;
+    transition: 0.5s linear;
+}
+#checkbox13:checked ~ #f11, #checkbox13:checked ~ #f12 {
+    visibility: collapse;
+    transition: 0.5s linear;
+}
+#checkbox13:not(:checked) ~ #ft13 {
+    width: 0em;
+    transition: 0.5s linear;
+}
+#checkbox14:checked ~ #ft14 {
+    width: 90.2em;
+    transition: 0.5s linear;
+}
+#checkbox14:checked ~ #f13 {
+    margin-left: -90.2em;
+    transition: 0.5s linear;
+}
+#checkbox14:checked ~ #f14 {
+    margin-left: -45em;
+    transition: 0.5s linear;
+}
+#checkbox14:checked ~ #f11, #checkbox14:checked ~ #f12 {
+    opacity: 0;
+    transition: 0.5s linear;
+}
+#checkbox14:not(:checked) ~ #ft14 {
+    width: 0em;
     transition: 0.5s linear;
 }
 #checkbox1:checked ~ #ft1 h1, #checkbox2:checked ~ #ft2 h1,
 #checkbox3:checked ~ #ft3 h1, #checkbox4:checked ~ #ft4 h1,
-#checkbox5:checked ~ #ft5 h1 {
+#checkbox5:checked ~ #ft5 h1, #checkbox6:checked ~ #ft6 h1,
+#checkbox7:checked ~ #ft7 h1, #checkbox8:checked ~ #ft8 h1,
+#checkbox9:checked ~ #ft9 h1, #checkbox10:checked ~ #ft10 h1,
+#checkbox11:checked ~ #ft11 h1, #checkbox12:checked ~ #ft12 h1,
+#checkbox13:checked ~ #ft13 h1, #checkbox14:checked ~ #ft14 h1 {
     margin-top: 0em;
     font-size: 3.5em;
     letter-spacing: 0.01em;
@@ -366,7 +633,11 @@ header {
 }
 #checkbox1:not(:checked) ~ #ft1 h1, #checkbox2:not(:checked) ~ #ft2 h1,
 #checkbox3:not(:checked) ~ #ft3 h1, #checkbox4:not(:checked) ~ #ft4 h1,
-#checkbox5:not(:checked) ~ #ft5 h1 {
+#checkbox5:not(:checked) ~ #ft5 h1, #checkbox6:not(:checked) ~ #ft6 h1,
+#checkbox7:not(:checked) ~ #ft7 h1, #checkbox8:not(:checked) ~ #ft8 h1,
+#checkbox9:not(:checked) ~ #ft9 h1, #checkbox10:not(:checked) ~ #ft10 h1,
+#checkbox11:not(:checked) ~ #ft11 h1, #checkbox12:not(:checked) ~ #ft12 h1,
+#checkbox13:not(:checked) ~ #ft13 h1, #checkbox14:not(:checked) ~ #ft14 h1 {
     margin-top: 0em;
     font-size: 0em;
     letter-spacing: 0em;
@@ -378,8 +649,9 @@ header {
 	font-size: 3.5em;
 	text-transform: uppercase;
 	font-weight: 700;
-	margin-left: 0.2em;
-    margin-top: 11.5em;
+	position: absolute;
+	left: 0.2em;
+	bottom: 0.2em;
     text-shadow: 0 0 5px #fff,
                 0 0 10px #fff,
                 0 0 20px #fff,
@@ -392,8 +664,24 @@ header {
 	font-size: 3.5em;
 	text-transform: uppercase;
 	font-weight: 700;
-	margin-left: 0.2em;
-    margin-top: 5em;
+	position: absolute;
+	left: 0.2em;
+	bottom: 0.2em;
+    text-shadow: 0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 30px #fff,
+                0 0 40px #fff,
+                0 0 50px #fff
+}
+.food-name3 {
+	color: #000;
+	font-size: 3.5em;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: absolute;
+	left: 0.2em;
+	top: 0.2em;
     text-shadow: 0 0 5px #fff,
                 0 0 10px #fff,
                 0 0 20px #fff,
@@ -536,6 +824,177 @@ header {
 	#chk:checked ~ .menu { /*使目錄圖樣Enable*/
 		right: 0;
 	}
+}
+@media screen and (max-width: 80em) {
+    .first {
+        height: 98.2em;
+    }
+    .food-table {
+        height: 30.2em;
+    }
+    #f1 {
+        height: 30.2em;
+        width: 30.2em;
+    }
+    #f2, #f13 {
+        height: 15em;
+        width: 15em;
+    }
+    #f3 {
+        height: 15em;
+        width: 15em;
+    	top: 15.2em;
+    }
+    #f4, #f14 {
+        height: 15em;
+        width: 15em;
+    	margin-left: 15.4em;
+    }
+    #f5 {
+        height: 15em;
+        width: 15em;
+    	margin-left: 15.4em;
+    	top: 15.2em;
+    }
+    #f6, #f11 {
+        height: 15em;
+        width: 15em;
+        margin-right: 15.2em;
+    }
+    #f7 {
+        height: 15em;
+        width: 15em;
+        margin-right: 15.2em;
+    	top: 15.2em;
+    }
+    #f8, #f12 {
+        height: 15em;
+        width: 15em;
+    }
+    #f9 {
+        height: 15em;
+        width: 15em;
+    	top: 15.2em;
+    }
+    #f10 {
+        height: 30.2em;
+        width: 30.2em;
+    }
+    #ft1 {
+        height: 30.2em;
+    }
+    #ft2, #ft3 {
+        height: 30.2em;
+        margin-right: -15.2em;
+    }
+    #ft4, #ft5 {
+        height: 30.2em;
+        margin-right: -30.4em;
+    }
+    #ft6, #ft7 {
+        height: 30.2em;
+        margin-left: -15em;
+    }
+    #ft8, #ft9 {
+        height: 30.2em;
+    }
+    #ft10 {
+        height: 30.2em;
+    }
+    #ft11 {
+        height: 15em;
+        margin-left: -15em;
+    }
+    #ft12 {
+        height: 15em;
+    }
+    #ft13 {
+        height: 15em;
+        margin-right: -15.2em;
+    }
+    #ft14 {
+        height: 15em;
+        margin-right: -30.4em;
+    }
+    #checkbox1:checked ~ #ft1 {
+        width: 30.2em;
+    }
+    #checkbox2:checked ~ #ft2, #checkbox3:checked ~ #ft3 {
+        width: 30.2em;
+    }
+    #checkbox2:checked ~ #f2, #checkbox2:checked ~ #f3,
+    #checkbox3:checked ~ #f2, #checkbox3:checked ~ #f3 {
+        margin-left: -30.2em;
+    }
+    #checkbox4:checked ~ #ft4, #checkbox5:checked ~ #ft5 {
+        width: 30.2em;
+    }
+    #checkbox4:checked ~ #f2, #checkbox4:checked ~ #f3,
+    #checkbox5:checked ~ #f2, #checkbox5:checked ~ #f3 {
+        margin-left: -30.2em;
+    }
+    #checkbox4:checked ~ #f4, #checkbox4:checked ~ #f5,
+    #checkbox5:checked ~ #f4, #checkbox5:checked ~ #f5 {
+        margin-left: -15em;
+    }
+    #checkbox6:checked ~ #ft6, #checkbox7:checked ~ #ft7 {
+        width: 30.2em;
+    }
+    #checkbox6:checked ~ #f8, #checkbox6:checked ~ #f9,
+    #checkbox7:checked ~ #f8, #checkbox7:checked ~ #f9 {
+        margin-right: -30.4em;
+    }
+    #checkbox8:checked ~ #ft8, #checkbox9:checked ~ #ft9 {
+        width: 30.2em;
+    }
+    #checkbox10:checked ~ #ft10 {
+        width: 30.2em;
+    }
+    #checkbox11:checked ~ #ft11 {
+        width: 30.2em;
+    }
+    #checkbox11:checked ~ #f12 {
+        margin-right: -30.4em;
+    }
+    #checkbox12:checked ~ #ft12 {
+        width: 30.2em;
+    }
+    #checkbox13:checked ~ #ft13 {
+        width: 30.2em;
+    }
+    #checkbox13:checked ~ #f13 {
+        margin-left: -30.2em;
+    }
+    #checkbox14:checked ~ #ft14 {
+        width: 30.2em;
+    }
+    #checkbox14:checked ~ #f13 {
+        margin-left: -30.2em;
+    }
+    #checkbox14:checked ~ #f14 {
+        margin-left: -15em;
+    }
+    #checkbox1:checked ~ #ft1 h1, #checkbox2:checked ~ #ft2 h1,
+    #checkbox3:checked ~ #ft3 h1, #checkbox4:checked ~ #ft4 h1,
+    #checkbox5:checked ~ #ft5 h1, #checkbox6:checked ~ #ft6 h1,
+    #checkbox7:checked ~ #ft7 h1, #checkbox8:checked ~ #ft8 h1,
+    #checkbox9:checked ~ #ft9 h1, #checkbox10:checked ~ #ft10 h1,
+    #checkbox11:checked ~ #ft11 h1, #checkbox12:checked ~ #ft12 h1,
+    #checkbox13:checked ~ #ft13 h1, #checkbox14:checked ~ #ft14 h1 {
+        font-size: 2.5em;
+    }
+    .food-name1 {
+    	font-size: 2.5em;
+    }
+    .food-name2 {
+    	font-size: 2.5em;
+    }
+    .food-name3 {
+    	font-size: 2.5em;
+    }
+    .last {
+        margin-top: 98.2em;
+    }
 }
 @media screen and (max-width: 35em) { /*隨視窗大小調整內容排放*/
     .btn {
