@@ -103,7 +103,7 @@
                 </div>
 		    </div>
             <div class="item-table2">
-                <div class="region-card">
+                <div class="region-card" id="card4">
                     <h1 class="item-title">Régions</h1>
                     <h3 class="item-detail3">Taiwan est un pays culturellement riche et varié, 
                         on vous propose de découvrir ces différences pour chaque région.</h3>
@@ -174,6 +174,7 @@
             var img3 = document.querySelector("#img3");
             var img4 = document.querySelector("#img4");
             var img5 = document.querySelector("#img5");
+            var card4 = document.querySelector("#card4");
             var card5 = document.querySelector("#card5");
             var card6 = document.querySelector("#card6");
             var first = document.querySelector("#first");
@@ -207,6 +208,10 @@
                 event.preventDefault();
             })
 
+            card4.addEventListener("click", (event) => {
+                window.location.href = "02_Regions.html";
+                event.preventDefault();
+            })
             card5.addEventListener("click", (event) => {
                 window.location.href = "02_Cuisine.html";
                 event.preventDefault();
