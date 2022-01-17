@@ -1,8 +1,8 @@
 * {
-	margin: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-	font-family: "montserrat", sans-serif;
+    font-family: "montserrat", sans-serif;
 }
 .fixed-header-slide {
     width: 100%;
@@ -774,7 +774,7 @@ header {
 	.menu { /*換成目錄顯示之後的黑底背景*/
 		position: fixed;
 		width: 100%;
-		height: 60.1em;
+		height: 100%;
 		background: #333;
 		right: -100%;
 		top: 0;
