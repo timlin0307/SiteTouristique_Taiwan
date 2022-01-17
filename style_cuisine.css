@@ -89,7 +89,7 @@ header {
 .first {
     width: 100%;
     height: 155.2em;
-    background-color: #fff;
+    background-image: linear-gradient(rgba(75, 75, 75, 0.75), rgba(255, 255, 255, 0.75)), url(img/bg0_3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

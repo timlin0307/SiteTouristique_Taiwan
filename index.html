@@ -94,7 +94,7 @@
                         succulentes, vous avez la garantie de vous régaler!</h3>
                     <a href="#" class="know-btn">En Savoir Plus</a>
                 </div>
-                <div class="cult-card">
+                <div class="cult-card" id="card6">
                     <h1 class="item-title">Culture</h1>
                     <h3 class="item-detail3">Connaissez-vous les cultures dedans Taïwan?
                         Ces cultures peuvent vous faire connaître les différents visages!</h3>
@@ -153,6 +153,7 @@
             var img4 = document.querySelector("#img4");
             var img5 = document.querySelector("#img5");
             var card5 = document.querySelector("#card5");
+            var card6 = document.querySelector("#card6");
             var first = document.querySelector("#first");
             var second = document.querySelector("#second");
             var third = document.querySelector("#third");
@@ -181,6 +182,10 @@
 
             card5.addEventListener("click", (event) => {
                 window.location.href = "02_Cuisine.html";
+                event.preventDefault();
+            })
+            card6.addEventListener("click", (event) => {
+                window.location.href = "02_Culture.html";
                 event.preventDefault();
             })
 
