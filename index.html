@@ -57,11 +57,10 @@
 			</div>
 		</div>
         <div class="second" id="second">
-            <h1 id="s-title">Connaître Taïwan</h1>
-            <h3 id="s-detail1">Les paysages de Taïwan, diversifiés et minutieux, et les coutumes des différents coins regorgent d'histoires locales et de sentiments touchants. 
-                Bienvenue à voyager à Taïwan pour découvrir la vie, visiter cette belle île, les secrets des voyageurs, savourer la culture de Taïwan et rencontrer le contact 
-                humain à Taïwan !</h3>
-            <h3 id="s-detail2">Le Taiwan amical, sage et expérimenté vous accueille chaleureusement !</h3>
+            <h1 id="s-title">Découvrir Taïwan</h1>
+            <h3 id="s-detail1">Les paysages de Taïwan, diversifiés et pitoresques, et les coutumes des différents coins regorgent d'histoires locales et d'anecdotes. 
+                On vous fait voyager à Taïwan et y découvrir la vie, visiter cette belle île, les secrets des voyageurs, savourer la culture de Taïwan et rencontrer les fabuleux Taiwanais qui se feront une joie de vous accueillir !</h3>
+            <h3 id="s-detail2">N'hésitez pas! Venez profiter de ces merveilleux paysages et de l'hospitalité des Taiwanais !</h3>
             <div class="item-inline">
                 <div class="in1-card" id="img1">
                     <h1 class="img-title">Formose</h1>
@@ -92,7 +91,9 @@
                 </div>
                 <div class="item-combine">
                     <div class="search-card">
-                        <h1 class="item-title">Activités</h1>
+                        <a href="https://hackmd.io/-Pq5IZSUTxS89IoyxIFokQ?view">
+                            <h1 class="item-title">Activités</h1>
+                        </a>
                         <h3 class="item-detail2">Activités en tout genre et de moments mémorables à vivre.</h3>
                     </div>
                     <div class="best-card">
@@ -181,6 +182,10 @@
             var last = document.querySelector("#last");
             var log = 0;
 
+            document.addEventListener("DOMContentLoaded", function(event) {
+                login.style.display = "none";
+            });
+
             img1.addEventListener("click", (event) => {
                 window.location.href = "01_Formose.html";
                 event.preventDefault();
@@ -220,16 +225,13 @@
             }
 
             function to(toE1) {
-                // toE1 為指定跳轉到ㄉ該位置的 DOM 節點
                 let bridge = toE1;
                 let body = document.body;
                 let height = 0;
-                // 計算該 DOM 節點到 body 頂部的距離
                 do {
                     height += bridge.offsetTop;
                     bridge = bridge.offsetParent;
                 } while (bridge !== body)
-                // 滾動到指定位置
                 window.scrollTo ({
                     top: height,
                     behavior: "smooth"
