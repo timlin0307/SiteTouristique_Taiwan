@@ -86,6 +86,102 @@ header {
 .myBtn:hover {
     background-color: rgba(85, 85, 85, 0.75);
 }
+.login_center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20em;
+    background: #fff;
+    border-radius: 1em;
+    z-index: 1;
+}
+.login_center h1 {
+    text-align: center;
+    padding: 0.5em 0 0.5em 0;
+    border-bottom: 0.05em solid #009688;
+    margin-bottom: 0.5em;
+}
+.login_center form {
+    padding: 0 2em;
+    box-sizing: border-box;
+}
+form .txt_field {
+    position: relative;
+    border-bottom: 0.05em solid #adadad;
+    margin: 2em 0;
+}
+.txt_field input {
+    width: 100%;
+    padding: 0 0.15em;
+    height: 1.2em;
+    font-size: 1em;
+    border: none;
+    background: none;
+    outline: none;
+}
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 0.18em;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.5s linear;
+}
+.txt_field span::before {
+    content: "";
+    position: absolute;
+    top: 1.2em;
+    left: 0em;
+    width: 0%;
+    height: 0.05em;
+    background: #009688;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+    top: -0.5em;
+    color: #009688;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before {
+    width: 100%;
+    transition: 0.5s linear;
+}
+.pass {
+    margin: 1em 0 1em 0.18em;
+    color: #009688;
+    cursor: pointer;
+}
+.pass:hover {
+    text-decoration: underline;
+}
+input[type="submit"] {
+    width: 100%;
+    height: 2.4em;
+    border: 0.01em solid;
+    background: #009688;
+    border-radius: 2em;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover {
+    border-color: #009688;
+    transition: 0.5s linear;
+}
+.signup_link {
+    margin: 1.2em 0;
+    text-align: center;
+    font-size: 1em;
+    color: #666666;
+}
+.signup_link a {
+    color: #009688;
+}
 .first {
     width: 100%;
     height: 60.1em;

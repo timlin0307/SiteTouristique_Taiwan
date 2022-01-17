@@ -24,6 +24,26 @@
             </div>
 		</div>
         <button class="myBtn" id="myBtn">^</button>
+        <div class="login_center" id="login_center">
+            <h1>Login</h1>
+            <form method="post">
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Username</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="pass">Forgot Password?</div>
+                <input type="submit" value="Login">
+                <div class="signup_link">
+                    Not a member? <a href="#">Signup</a>
+                </div>
+            </form>
+        </div>
         <div class="first" id="first">
 			<div class="text-box">
 				<p>VISITER</p>
@@ -141,6 +161,7 @@
         </div>
         <script type="text/javascript">
             var myBtn = document.querySelector("#myBtn");
+            var login = document.querySelector("#login_center");
             var logo = document.querySelector("#logo");
             var hd1 = document.querySelector("#head1");
             var hd2 = document.querySelector("#head2");
@@ -158,6 +179,7 @@
             var second = document.querySelector("#second");
             var third = document.querySelector("#third");
             var last = document.querySelector("#last");
+            var log = 0;
 
             img1.addEventListener("click", (event) => {
                 window.location.href = "01_Formose.html";
@@ -240,6 +262,16 @@
             })
             hd2.addEventListener("click", (event) => {
                 to(last);
+                event.preventDefault(); // 不加這行會出錯
+            })
+            hd3.addEventListener("click", (event) => {
+                if(log == 0) {
+                    log = 1;
+                    login.style.display = "block"; 
+                } else {
+                    log = 0;
+                    login.style.display = "none";
+                }
                 event.preventDefault(); // 不加這行會出錯
             })
         </script>
