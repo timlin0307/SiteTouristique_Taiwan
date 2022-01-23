@@ -4,7 +4,7 @@
 ## Introduction
 - C'est un projet de cours Développement Web à Ecole Centrale Marseille (2A). Le but de ce projet est de concevoir un site. On décide de faire un site touristique qui introduit Taïwan.
 - Ce site présente Taïwan sous l'angle de la culture, de la gastronomie, des paysages, des transports, etc. On utilise de nombreuses façons d'améliorer l'interaction entre l'utilisateur et le site Web.
-- Dans notre projet, on utilise beaucoup de HTML et CSS mais moins de JavaScript.
+- Dans notre projet, on utilise beaucoup de HTML et CSS, mais moins de JavaScript.
 
 ---
 ## Annuaires
